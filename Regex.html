@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pagina com exercicios sobre Expressoes Regulares</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Experimentando Expressoes Regulares</h1>
+    <p id="texto-base">Este texto serve como base para os diferentes exercicios ;
+      envolvendo o uso de expressoes regulares. e necessario muito estudo para poder dominar todas as Diferentes Tecnicas e combinacoes possiveis!<br>Lorem ipsum doloer alea jacta est. Vini, vidi, vinci foi o que Julio Cesar disse ao vencer os celtas na Galia. Preciso de um texto muito grande, com xixi e coco, numeros de 36281 at askwidl39273.</p>
+    <h2>Usando o metodo .test()</h2>
+    <p>let regex = /alea/; exemplo.test(regex);
+    <p id="demo"></p>
+    <script>
+      let texto_base = document.querySelector('#texto-base').innerHTML;
+      console.log(texto_base);
+      let regex = /alea/;
+      let troca = document.querySelector('#demo');
+      console.log(troca);
+      troca.innerHTML = regex.test(texto_base);
+    </script>
+  </body>
+</html>

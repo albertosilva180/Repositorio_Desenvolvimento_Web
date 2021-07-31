@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+        * {
+          margin: 0;
+        }
+        h1 {
+          background-color: grey;
+          border: 1px solid red;
+          margin: 0.5em;
+        }
+        p {
+          background-color: pink;
+          border: 1px solid black;
+          margin: 1em;
+        }
+        table {
+          display: inline-table;
+          background-color: rgb(220, 190, 0);
+          border: 1px solid black;
+        }
+      </style>
+    </head>
+    <body>
+      <h1 id="meuTitulo">A Heading</h1>
+      <h2 id="vazio"></h2>
+      <p>This is a paragraph</p>
+      <button onclick="document.getElementById('myImage').src='images/pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="images/pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='images/pic_bulboff.gif'">Turn off the light</button>
+
+      <table>
+        <tr>
+          <th>Tabela Exemplo
+          </th>
+          <th>Valor
+          </th>
+        </tr>
+        <tr>
+          <td>abs
+          </td>
+          <td>123
+          </td>
+        </tr>
+      </table>
+      <p style="display:inline-block; height:100px;">Parágrafo com Inline</p>
+      <button type="button" onclick="document.getElementById('meuTitulo').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+      <script>document.getElementById('vazio').innerHTML = 'escrevi isto com JavaScript'</script>
+    </body>
+  </html>

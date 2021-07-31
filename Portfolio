@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    body {
+      margin: 0;
+      color: #8059a6;
+    }
+
+    #navbar {
+      display: flex;
+      width: 100%;
+      height: 100px;
+      z-index: 20;
+      position: fixed;
+      background-color: #59a680;
+      top: 0;
+      justify-content: right;
+      align-items: center;
+    }
+
+    #navbar > a {
+      padding-right: 5%;
+      text-decoration: none;
+      text-transform: uppercase;
+      weight: bold;
+      font-size: 22px;
+    }
+    #welcome-section {
+      position: relative;
+      height: 100vh;
+      background-color: #444444;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    a {
+      color:#a68059;
+    }
+
+    hr {
+      border: 10px solid #59a680;
+      margin: 0;
+    }
+
+    @media only screen and (max-width: 600px){
+      body {
+        background-color: black;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <a href="#welcome-section">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#profile-link">Contact</a>
+  </nav>
+  <section id="welcome-section">
+    <h1>Hello, I am Alberto Silva</h1>
+    <p style="color:#a68059"><bold>A web developer</bold></p>
+  </section>
+  <hr>
+  <section id="projects">
+    <a href="#" class="project-tile" id="project1"><iframe height="300" style="width: 100%;" scrolling="no" title="Tribute Page" src="https://codepen.io/albertosilva180/embed/rNybKNO?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/albertosilva180/pen/rNybKNO">
+  Tribute Page</a> by albertosilva180 (<a href="https://codepen.io/albertosilva180">@albertosilva180</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe></a>
+    <a href="#" class="project-tile" id="project2">Project Tile</a>
+    <a href="#" class="project-tile" id="project3">Project Tile</a>
+    <a href="#" class="project-tile" id="project4">Project Tile</a>
+  </section>
+  <a id="profile-link" href="#" target="_blank">My Profile</a>
+  <body>
+<html>
